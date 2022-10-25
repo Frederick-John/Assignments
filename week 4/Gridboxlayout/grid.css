@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(242, 236, 248);
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+}
+
+main {
+  display: grid;
+  width: 50%;
+  margin: auto;
+  gap: 20px;
+}
+
+.layout {
+  display: grid;
+  grid-template-areas:
+    "A A A B"
+    "A A A B"
+    "A A A B"
+    "A A A B"
+    "A A A B"
+    "A A A B"
+    "A A A B"
+    "A A A B"
+    "A A A B"
+    "A A A B"
+    "C C D D"
+    "C C D D"
+    "C C D D"
+    "C C D D"
+    "C C D D"
+    "C C E E"
+    "C C E E"
+    "C C E E"
+    "C C E E"
+    "C C E E"
+    "C C E E";
+  gap: 20px;
+}
+
+main div {
+  background-color: rgb(19, 2, 34);
+  padding: 2em;
+  text-align: center;
+}
+.A {
+  background-color: rgba(236, 52, 6, 0.89);
+  color: white;
+  grid-area: A;
+}
+
+.B {
+  background-color: rgba(189, 146, 5, 0.897);
+  color: white;
+  grid-area: B;
+}
+
+.C {
+  background-color: rgba(3, 139, 37, 0.795);
+  color: black;
+  grid-area: C;
+}
+
+.D {
+  background-color: rgba(14, 181, 231, 0.89);
+  color: black;
+  grid-area: D;
+}
+
+.E {
+  background-color: rgba(14, 181, 231, 0.89);
+  color: white;
+  grid-area: E;
+}

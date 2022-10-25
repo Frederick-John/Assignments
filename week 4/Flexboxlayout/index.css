@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+
+main {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  padding: 2em;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+  padding: 2em;
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  padding: 2em;
+}
+
+p {
+  font-family: Lexend Deca;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+  padding-bottom: 3em;
+}
+
+h2 {
+  padding-bottom: 20px;
+  color: hsl(0, 0%, 95%);
+  font-family: Big Shoulders Display;
+  font-weight: 700;
+}
+
+button {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+
+img {
+  width: 30%;
+  align-items: baseline;
+  padding-bottom: 2em;
+}
+
+@media only screen and (max-width: 1440px) {
+  main {
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 375px) {
+  main {
+    flex-direction: column;
+  }
+}
